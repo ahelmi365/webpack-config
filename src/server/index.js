@@ -19,6 +19,6 @@ app.listen(8081, function () {
 
 app.post("/test", function (req, res) {
   console.log( req )
-  // const formText = JSON.stringify(req.body.form)
+  const formText = JSON.stringify(req.body.form)
   res.send({ ...mockAPIResponse, formText: req.body });
 });
